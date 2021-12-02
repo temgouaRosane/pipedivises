@@ -24,7 +24,7 @@ export class AppComponent {
   Libre_Turque = new Devise('Livre_Turque', 'TRY');
   yen_japonais = new Devise('Yen japonais', 'YP');
   livre_sterling = new Devise('Livre sterling', 'LS');
-  frnac_suisse = new Devise('Franc suisse', 'FS');
+  franc_suisse = new Devise('Franc suisse', 'FS');
   dollar_canadien = new Devise('Dollar canadien', 'DC');
   yuan_chinois = new Devise('Yuan chinois', 'YC');
   dirham_UAE = new Devise('Dirham UAE', 'DUAE');
@@ -50,6 +50,13 @@ export class AppComponent {
     this.rouble_russe,
     this.Real_Bresilien,
     this.Libre_Turque,
+    this.Bitcoin,
+    this.dirham_UAE,
+    this.yuan_chinois,
+    this.dollar_canadien,
+    this.franc_suisse,
+    this.livre_sterling,
+    this.yen_japonais,
   ];
   devisedepart = this.dollar;
   devisearrivee = this.euro;

@@ -1,22 +1,22 @@
-<h1>BIENVENUE SUR MON CONVERTISSEUR DE DEVISES</h1>
+<h2>BIENVENUE SUR MON CONVERTISSEUR DE DEVISES</h2>
 <body class="container1">
   
 
 <div class="container">
   <div class="valeurdepart">
     <div class="head">
-      <label>{{devisedepart.name}} </label>
+      <label class="label">{{devisedepart.name}} </label>
       <select [(ngModel)]='devisedepart' class="select">
         <option *ngFor="let devise of listedesdevises" [ngValue]="devise">{{devise.code}}</option>
       </select>
     </div>
     <input type="text"  [(ngModel)]='valeur'>
-  </div><br><br><br>
+  </div>
 
   <div class="devisearrivee">
     <div class="head">
-      <label>{{devisearrivee.name}}</label>
-      <select [(ngModel)]='devisearrivee'>
+      <label class="label">{{devisearrivee.name}}</label>
+      <select [(ngModel)]='devisearrivee' class="select">
         <option *ngFor="let devise of listedesdevises" [ngValue]="devise">{{devise.code}}</option>
       </select>
     </div>
