@@ -1,0 +1,30 @@
+<h1>BIENVENUE SUR MON CONVERTISSEUR DE DEVISES</h1>
+<body class="container1">
+  
+
+<div class="container">
+  <div class="valeurdepart">
+    <div class="head">
+      <label>{{devisedepart.name}} </label>
+      <select [(ngModel)]='devisedepart' class="select">
+        <option *ngFor="let devise of listedesdevises" [ngValue]="devise">{{devise.code}}</option>
+      </select>
+    </div>
+    <input type="text"  [(ngModel)]='valeur'>
+  </div><br><br><br>
+
+  <div class="devisearrivee">
+    <div class="head">
+      <label>{{devisearrivee.name}}</label>
+      <select [(ngModel)]='devisearrivee'>
+        <option *ngFor="let devise of listedesdevises" [ngValue]="devise">{{devise.code}}</option>
+      </select>
+    </div>
+    <input type="text" disabled  value='{{ valeur | pipedevises: devisedepart.name: devisearrivee.name}}' >
+  </div>
+
+</div>
+
+
+</body>
+
